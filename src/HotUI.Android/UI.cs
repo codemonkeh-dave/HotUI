@@ -20,6 +20,7 @@ namespace HotUI.Android
             Registrar.Handlers.Register<TextField, TextFieldHandler>();
             Registrar.Handlers.Register<Text, TextHandler>();
             Registrar.Handlers.Register<Toggle, ToggleHandler>();
+            Registrar.Handlers.Register<ActivityIndicator, ActivityIndicatorHandler>();
             //Registrar.Handlers.Register<WebView, WebViewHandler> ();
 
             // Containers
@@ -28,6 +29,8 @@ namespace HotUI.Android
 			Registrar.Handlers.Register<View, ViewHandler>();
             Registrar.Handlers.Register<ContentView, ContentViewHandler>();
             Registrar.Handlers.Register<ViewRepresentable, ViewRepresentableHandler>();
+            Registrar.Handlers.Register<TabView, TabViewHandler>();
+            Registrar.Handlers.Register<NavigationView, NavigationViewHandler>();
 
             // Native Layouts
             Registrar.Handlers.Register<HStack, HStackHandler>();

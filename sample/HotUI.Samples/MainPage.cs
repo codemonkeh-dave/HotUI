@@ -8,7 +8,9 @@ namespace HotUI.Samples {
 	public class MainPage : View {
 		List<MenuItem> pages = new List<MenuItem> {
             new MenuItem("Demo Credit Card",()=> new DemoCreditCardView()),
+            new MenuItem("Demo Credit Card 2",()=> new DemoCreditCardView2()),
             new MenuItem("Binding Sample!",()=> new BindingSample()),
+            new MenuItem("Animation Sample",()=> new AnimationSample()),
             new MenuItem("TabView",()=> new TabViewSample()),
             new MenuItem("BasicTestView",()=> new BasicTestView()),
             new MenuItem("ListViewSample1", ()=> new ListViewSample1()),
@@ -40,6 +42,8 @@ namespace HotUI.Samples {
             new MenuItem("SkiaSample3 (BindableFingerPaint)", ()=> new SkiaSample3()),
             new MenuItem("SkiaSample3WithScrollView (BindableFingerPaint)", ()=> new SkiaSample3WithScrollView()),
             new MenuItem("SkiaSample4 (BindableFingerPaint)", ()=> new SkiaSample4()),
+            new MenuItem("SkiaSample5 (Shapes) ",() => new SkiaSample5()),
+            new MenuItem("SkiaSample6 (Shapes w/ Gradient) ",() => new SkiaSample6()),
             new MenuItem("SwiftUI Tutorial Section 1", ()=> new Section1()),
             new MenuItem("SwiftUI Tutorial Section 2", ()=> new Section2()),
             new MenuItem("SwiftUI Tutorial Section 3", ()=> new Section3()),
@@ -53,7 +57,6 @@ namespace HotUI.Samples {
             new MenuItem("DavidSample1b",()=> new DavidSample1b()),
             new MenuItem("DavidSample1c",()=> new DavidSample1c()),
             new MenuItem("DavidSample2",()=> new DavidSample2()),
-            new MenuItem("SkiaShapeView ",() => new SkiaSample5())
         };
 
 		public MainPage (List<MenuItem> additionalPage = null)

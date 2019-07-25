@@ -20,6 +20,7 @@ namespace HotUI.iOS
 
             // Controls
             Registrar.Handlers.Register<Button, ButtonHandler> ();
+            Registrar.Handlers.Register<ProgressBar, ProgressBarHandler>();
             Registrar.Handlers.Register<Image, ImageHandler>();
             Registrar.Handlers.Register<TextField, TextFieldHandler> ();
 			Registrar.Handlers.Register<Text, TextHandler> ();
@@ -27,6 +28,7 @@ namespace HotUI.iOS
             Registrar.Handlers.Register<Slider, SliderHandler>();
             Registrar.Handlers.Register<ShapeView, ShapeViewHandler>();
             Registrar.Handlers.Register<Toggle, ToggleHandler>();
+            Registrar.Handlers.Register<ActivityIndicator, ActivityIndicatorHandler>();
             //Registrar.Handlers.Register<WebView, WebViewHandler> ();
 
             // Containers
